@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Autism Sensory App</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+  <h1>🎧 Sensory Sound App</h1>
+  <p>Tap a button to play calming sounds.</p>
+
+  <button onclick="playSound('rain')">Rain Sounds</button>
+  <button onclick="playSound('waves')">Ocean Waves</button>
+  <button onclick="playSound('chimes')">Wind Chimes</button>
+
+  <audio id="rain" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+  <audio id="waves" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+  <audio id="chimes" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+
+  <script>
+    function playSound(id) {
+      document.getElementById(id).play();
+    }
+  </script>
+</body>
+</html>
